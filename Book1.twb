@@ -244,7 +244,7 @@
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
-      <column caption='UTC Timestamp' datatype='datetime' name='[Calculation_801922248599285760]' role='dimension' type='ordinal'>
+      <column caption='UTC Timestamp' datatype='datetime' datatype-customized='true' name='[Calculation_801922248599285760]' role='dimension' type='ordinal'>
         <calculation class='tableau' formula='DATEADD(&apos;hour&apos;,0,(Date(&quot;1/1/1970&quot;) + ([created_utc]/86400)))' />
       </column>
       <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
@@ -882,7 +882,117 @@
     </datasource>
   </datasources>
   <worksheets>
-    <worksheet name='Sheet 1'>
+    <worksheet name='Propogation Over Subreddits'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mentions' name='federated.1ov4cv80yl1urj1ekm06k1wsh9z8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ov4cv80yl1urj1ekm06k1wsh9z8'>
+            <column caption='UTC Timestamp' datatype='datetime' datatype-customized='true' name='[Calculation_801922248599285760]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATEADD(&apos;hour&apos;,0,(Date(&quot;1/1/1970&quot;) + ([created_utc]/86400)))' />
+            </column>
+            <column caption='Body' datatype='string' name='[body]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>body</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column caption='Created Utc' datatype='real' name='[created_utc]' role='measure' type='quantitative'>
+              <desc>
+                <formatted-text>
+                  <run>created_utc</run>
+                </formatted-text>
+              </desc>
+            </column>
+            <column-instance column='[Calculation_801922248599285760]' derivation='Day' name='[dy:Calculation_801922248599285760:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_801922248599285760]' derivation='Hour' name='[hr:Calculation_801922248599285760:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_801922248599285760]' derivation='Month' name='[mn:Calculation_801922248599285760:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[body]' derivation='None' name='[none:body:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subreddit]' derivation='None' name='[none:subreddit:nk]' pivot='key' type='nominal' />
+            <column caption='Subreddit' datatype='string' name='[subreddit]' role='dimension' type='nominal'>
+              <desc>
+                <formatted-text>
+                  <run>subreddit</run>
+                </formatted-text>
+              </desc>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1ov4cv80yl1urj1ekm06k1wsh9z8].[none:subreddit:nk]' value='131' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='cols' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='background-color' scope='cols' value='#00000000' />
+            <format attr='separator' scope='cols' value='/' />
+            <format attr='separator' scope='rows' value='/' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#e6e6e6' />
+            <format attr='background-color' data-class='total' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1ov4cv80yl1urj1ekm06k1wsh9z8].[none:body:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Day of UTC Timestamp:&#9;</run>
+                <run bold='true'>&lt;[federated.1ov4cv80yl1urj1ekm06k1wsh9z8].[dy:Calculation_801922248599285760:ok]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Hour of UTC Timestamp:&#9;</run>
+                <run bold='true'>&lt;[federated.1ov4cv80yl1urj1ekm06k1wsh9z8].[hr:Calculation_801922248599285760:ok]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Month of UTC Timestamp:&#9;</run>
+                <run bold='true'>&lt;[federated.1ov4cv80yl1urj1ekm06k1wsh9z8].[mn:Calculation_801922248599285760:ok]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Body:&#9;</run>
+                <run bold='true'>&lt;[federated.1ov4cv80yl1urj1ekm06k1wsh9z8].[none:body:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Subreddit:&#9;</run>
+                <run bold='true'>&lt;[federated.1ov4cv80yl1urj1ekm06k1wsh9z8].[none:subreddit:nk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#75a1c7' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1ov4cv80yl1urj1ekm06k1wsh9z8].[mn:Calculation_801922248599285760:ok] / ([federated.1ov4cv80yl1urj1ekm06k1wsh9z8].[dy:Calculation_801922248599285760:ok] / [federated.1ov4cv80yl1urj1ekm06k1wsh9z8].[hr:Calculation_801922248599285760:ok]))</rows>
+        <cols>[federated.1ov4cv80yl1urj1ekm06k1wsh9z8].[none:subreddit:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
       <table>
         <view>
           <datasources />
@@ -903,7 +1013,40 @@
     </worksheet>
   </worksheets>
   <windows saved-dpi-scale-factor='1.25' source-height='37'>
-    <window class='worksheet' maximized='true' name='Sheet 1'>
+    <window class='worksheet' maximized='true' name='Propogation Over Subreddits'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ov4cv80yl1urj1ekm06k1wsh9z8].[:Measure Names]</field>
+            <field>[federated.1ov4cv80yl1urj1ekm06k1wsh9z8].[mn:Calculation_801922248599285760:ok]</field>
+            <field>[federated.1ov4cv80yl1urj1ekm06k1wsh9z8].[none:body:nk]</field>
+            <field>[federated.1ov4cv80yl1urj1ekm06k1wsh9z8].[none:subreddit:nk]</field>
+            <field>[federated.1ov4cv80yl1urj1ekm06k1wsh9z8].[yr:Calculation_801922248599285760:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Sheet 2'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -927,7 +1070,98 @@
     </window>
   </windows>
   <thumbnails>
-    <thumbnail height='192' name='Sheet 1' width='192'>
+    <thumbnail height='192' name='Propogation Over Subreddits' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
       AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
       gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
