@@ -13,13 +13,14 @@ for comment in data:
 
     postId = comment['link_id']
 
-    if postId in linksById:
+    if postId not in linksById:
 
         url = 'https://www.reddit.com/by_id/' + postId + '.json'
-        headers = {'user-agent': 'teju-reddit-api-accessing' + randint(0, 1000)}
+        headers = {'user-agent': 'teju-reddit-api-accessing' + str(randint(0, 1000))}
         r = requests.get(url=url, headers=headers)
 
         if r.status_code == 200:
+            print(postId, ' is ', r.json())
             linksById[postId] = r.json()
         else:
             print("Failure for comment ", comment)
@@ -28,4 +29,4 @@ linksJson = json.dumps(linksById, ensure_ascii=True)
 
 outFile = "./data/parent_posts_july.json"
 with open(outFile, 'w') as outfile:
-    json.dump(data, outfile)
+    json.dump(linksJson, outfile)
