@@ -20,13 +20,11 @@ for comment in data:
         r = requests.get(url=url, headers=headers)
 
         if r.status_code == 200:
-            print(postId, ' is ', r.json())
+            print(postId)
             linksById[postId] = r.json()
         else:
             print("Failure for comment ", comment)
 
-linksJson = json.dumps(linksById, ensure_ascii=True)
-
 outFile = "./data/parent_posts_july.json"
 with open(outFile, 'w') as outfile:
-    json.dump(linksJson, outfile)
+    json.dump(linksById, outfile)
