@@ -7,6 +7,969 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
+    <datasource caption='mentions_july' inline='true' name='federated.1ggz4jm0hmswl0188w11h0rruyyj' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mentions_july' name='semistructpassivestore-direct.1y7ncgz1wsbcnx19esv051vfs542'>
+            <connection class='semistructpassivestore-direct' directory='D:/tejun/Downloads/RC_2017-07/data' filename='mentions_july.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[mentions_july.json]'>
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <relation connection='semistructpassivestore-direct.1y7ncgz1wsbcnx19esv051vfs542' name='mentions_july.json' table='[mentions_july.json]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>author</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[author]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>author</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>author_flair_css_class</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[author_flair_css_class]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>author_flair_css_class</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>author_flair_text</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[author_flair_text]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>author_flair_text</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>body</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[body]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>body</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>can_gild</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[can_gild]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>can_gild</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>can_mod_post</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[can_mod_post]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>can_mod_post</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>collapsed</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[collapsed]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>collapsed</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>controversiality</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[controversiality]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>controversiality</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_utc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[created_utc]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>created_utc</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>edited</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[edited]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>edited</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gilded</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gilded]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>gilded</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>id</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_submitter</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_submitter]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>is_submitter</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>link_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[link_id]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>link_id</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>parent_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[parent_id]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>parent_id</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retrieved_on</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[retrieved_on]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>retrieved_on</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>score</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stickied</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[stickied]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>stickied</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subreddit</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[subreddit]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>subreddit</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subreddit_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[subreddit_id]</local-name>
+            <parent-name>[mentions_july.json]</parent-name>
+            <remote-alias>subreddit_id</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='UTC Timestamp' datatype='datetime' name='[Calculation_1161647269195231232]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATEADD(&apos;hour&apos;,0,(Date(&quot;1/1/1970&quot;) + ([created_utc]/86400)))' />
+      </column>
+      <column caption='Length of Body' datatype='integer' name='[Calculation_801922248617934852]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='LEN([body])' />
+      </column>
+      <column caption='Author is Bot' datatype='boolean' name='[Calculation_801922248621195269]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='RIGHT(LOWER([author]), 3) = &quot;bot&quot;' />
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Author' datatype='string' name='[author]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>author</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Author Flair Css Class' datatype='string' hidden='true' name='[author_flair_css_class]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>author_flair_css_class</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Author Flair Text' datatype='string' hidden='true' name='[author_flair_text]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>author_flair_text</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Body' datatype='string' name='[body]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>body</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Can Gild' datatype='boolean' hidden='true' name='[can_gild]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>can_gild</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Can Mod Post' datatype='boolean' hidden='true' name='[can_mod_post]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>can_mod_post</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Collapsed' datatype='boolean' hidden='true' name='[collapsed]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>collapsed</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Controversiality' datatype='real' name='[controversiality]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>controversiality</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Created Utc' datatype='real' name='[created_utc]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>created_utc</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Edited' datatype='boolean' hidden='true' name='[edited]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>edited</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Gilded' datatype='real' name='[gilded]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>gilded</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>id</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Is Submitter' datatype='boolean' hidden='true' name='[is_submitter]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>is_submitter</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Link Id' datatype='string' name='[link_id]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>link_id</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Parent Id' datatype='string' name='[parent_id]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>parent_id</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Retrieved On' datatype='real' hidden='true' name='[retrieved_on]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>retrieved_on</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Score' datatype='real' name='[score]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>score</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Stickied' datatype='boolean' name='[stickied]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>stickied</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Subreddit' datatype='string' name='[subreddit]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>subreddit</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Subreddit Id' datatype='string' name='[subreddit_id]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>subreddit_id</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <folder name='Mentions July' role='dimensions'>
+        <folder-item name='[Document Index (generated)]' type='field' />
+        <folder-item name='[author]' type='field' />
+        <folder-item name='[author_flair_css_class]' type='field' />
+        <folder-item name='[author_flair_text]' type='field' />
+        <folder-item name='[body]' type='field' />
+        <folder-item name='[can_gild]' type='field' />
+        <folder-item name='[can_mod_post]' type='field' />
+        <folder-item name='[collapsed]' type='field' />
+        <folder-item name='[edited]' type='field' />
+        <folder-item name='[id]' type='field' />
+        <folder-item name='[is_submitter]' type='field' />
+        <folder-item name='[link_id]' type='field' />
+        <folder-item name='[parent_id]' type='field' />
+        <folder-item name='[stickied]' type='field' />
+        <folder-item name='[subreddit]' type='field' />
+        <folder-item name='[subreddit_id]' type='field' />
+      </folder>
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='D:/tejun/Downloads/RC_2017-07/tableau/mentions_july.tde' schema='Extract' tablename='Extract' update-time='08/18/2017 05:38:27 AM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Calculation_1161647269195231232]' formula='DATEADD(&apos;hour&apos;,0,(Date(&quot;1/1/1970&quot;) + ([created_utc]/86400)))' />
+            <calculation column='[Calculation_801922248617934852]' formula='LEN([body])' />
+            <calculation column='[Calculation_801922248621195269]' formula='RIGHT(LOWER([author]), 3) = &quot;bot&quot;' />
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='345' timestamp-start='2017-08-18 05:38:27.323' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Calculation_1161647269195231232</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Calculation_1161647269195231232]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Calculation_1161647269195231232</remote-alias>
+              <ordinal>0</ordinal>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>345</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='datetime'>#2017-07-30 17:19:29#</statistic>
+                <statistic aggregation='Max' datatype='datetime'>#2017-07-31 23:45:41#</statistic>
+                <statistic aggregation='Count' datatype='integer'>345</statistic>
+                <statistic aggregation='Median' datatype='datetime'>#2017-07-31 09:02:22#</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;datetime&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Calculation_801922248617934852</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Calculation_801922248617934852]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Calculation_801922248617934852</remote-alias>
+              <ordinal>1</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>7014.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>20.330434782608695</statistic>
+                <statistic aggregation='Min' datatype='integer'>12</statistic>
+                <statistic aggregation='Max' datatype='integer'>642</statistic>
+                <statistic aggregation='Stdev' datatype='real'>43.664562105007334</statistic>
+                <statistic aggregation='StdevP' datatype='real'>43.601234207859818</statistic>
+                <statistic aggregation='Var' datatype='real'>1906.5939838220424</statistic>
+                <statistic aggregation='VarP' datatype='real'>1901.0676244486453</statistic>
+                <statistic aggregation='Count' datatype='integer'>345</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>798466.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Document Index (generated)</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Document Index (generated)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Document Index (generated)</remote-alias>
+              <ordinal>2</ordinal>
+              <family>mentions_july.json</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>345</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>59685.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>173.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>345</statistic>
+                <statistic aggregation='Stdev' datatype='real'>99.737154561376968</statistic>
+                <statistic aggregation='StdevP' datatype='real'>99.592503064571417</statistic>
+                <statistic aggregation='Var' datatype='real'>9947.5</statistic>
+                <statistic aggregation='VarP' datatype='real'>9918.6666666666661</statistic>
+                <statistic aggregation='Count' datatype='integer'>345</statistic>
+                <statistic aggregation='Median' datatype='integer'>173</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>13747445.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>3</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>345.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.0</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Var' datatype='real'>0.0</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>345</statistic>
+                <statistic aggregation='Median' datatype='integer'>1</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>345.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>author</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[author]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>author</remote-alias>
+              <ordinal>4</ordinal>
+              <family>mentions_july.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>164</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;314GeorgeBoy&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;xSpigott&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>345</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>body</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[body]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>body</remote-alias>
+              <ordinal>5</ordinal>
+              <family>mentions_july.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>42</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;....NOT!..... /u/WaterGuy12&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;u/WaterGuy12 would&apos;ve loved this meme. RIP&#10;&#10;He&apos;s looking at memes in heaven now. &quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>345</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>controversiality</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[controversiality]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>controversiality</remote-alias>
+              <ordinal>6</ordinal>
+              <family>mentions_july.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>1.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>0.0028985507246376812</statistic>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>1.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.053838190205816552</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.053760107220264947</statistic>
+                <statistic aggregation='Var' datatype='real'>0.0028985507246376812</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.0028901491283343833</statistic>
+                <statistic aggregation='Count' datatype='integer'>345</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>1.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>created_utc</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[created_utc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>created_utc</remote-alias>
+              <ordinal>7</ordinal>
+              <family>mentions_july.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>345</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>518014605310.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1501491609.594203</statistic>
+                <statistic aggregation='Min' datatype='real'>1501435169.0</statistic>
+                <statistic aggregation='Max' datatype='real'>1501544741.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>30417.827613746555</statistic>
+                <statistic aggregation='StdevP' datatype='real'>30373.711814441347</statistic>
+                <statistic aggregation='Var' datatype='real'>925244236.73960233</statistic>
+                <statistic aggregation='VarP' datatype='real'>922562369.38673389</statistic>
+                <statistic aggregation='Count' datatype='integer'>345</statistic>
+                <statistic aggregation='Median' datatype='real'>1501491742.0</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>7.7779458383850163e+20</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gilded</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[gilded]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gilded</remote-alias>
+              <ordinal>8</ordinal>
+              <family>mentions_july.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>0.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>0.0</statistic>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>0.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.0</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Var' datatype='real'>0.0</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>345</statistic>
+                <statistic aggregation='Median' datatype='real'>0.0</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>0.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>9</ordinal>
+              <family>mentions_july.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>345</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;dkximel&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;dkzmnvg&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>345</statistic>
+                <statistic aggregation='Median' datatype='string'>&quot;dkyinxq&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>link_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[link_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>link_id</remote-alias>
+              <ordinal>10</ordinal>
+              <family>mentions_july.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>255</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;t3_5u9i6t&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;t3_6qscf5&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>345</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>parent_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[parent_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>parent_id</remote-alias>
+              <ordinal>11</ordinal>
+              <family>mentions_july.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>308</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;t1_dklycx3&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;t3_6qscf5&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>345</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>score</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>score</remote-alias>
+              <ordinal>12</ordinal>
+              <family>mentions_july.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>8004.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>23.199999999999999</statistic>
+                <statistic aggregation='Min' datatype='real'>-1.0</statistic>
+                <statistic aggregation='Max' datatype='real'>1434.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>102.54016796607867</statistic>
+                <statistic aggregation='StdevP' datatype='real'>102.39145118300804</statistic>
+                <statistic aggregation='Var' datatype='real'>10514.486046511627</statistic>
+                <statistic aggregation='VarP' datatype='real'>10484.009275362319</statistic>
+                <statistic aggregation='Count' datatype='integer'>345</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>3802676.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stickied</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[stickied]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stickied</remote-alias>
+              <ordinal>13</ordinal>
+              <family>mentions_july.json</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='boolean'>false</statistic>
+                <statistic aggregation='Max' datatype='boolean'>false</statistic>
+                <statistic aggregation='Count' datatype='integer'>345</statistic>
+                <statistic aggregation='Median' datatype='boolean'>false</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subreddit</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[subreddit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>subreddit</remote-alias>
+              <ordinal>14</ordinal>
+              <family>mentions_july.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>34</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;AskReddit&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;videos&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>345</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subreddit_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[subreddit_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>subreddit_id</remote-alias>
+              <ordinal>15</ordinal>
+              <family>mentions_july.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>34</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;t5_2qh03&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;t5_3ke2d&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>345</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Calculation_801922248621195269</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Calculation_801922248621195269]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Calculation_801922248621195269</remote-alias>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='boolean'>false</statistic>
+                <statistic aggregation='Max' datatype='boolean'>true</statistic>
+                <statistic aggregation='Count' datatype='integer'>345</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.611111' measure-ordering='alphabetic' measure-percentage='0.388889' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Document Index (generated)' />
+        <field-sort-custom-order field='author' />
+        <field-sort-custom-order field='body' />
+        <field-sort-custom-order field='controversiality' />
+        <field-sort-custom-order field='created_utc' />
+        <field-sort-custom-order field='Calculation_1161647269195231232' />
+        <field-sort-custom-order field='edited' />
+        <field-sort-custom-order field='gilded' />
+        <field-sort-custom-order field='id' />
+        <field-sort-custom-order field='is_submitter' />
+        <field-sort-custom-order field='link_id' />
+        <field-sort-custom-order field='parent_id' />
+        <field-sort-custom-order field='retrieved_on' />
+        <field-sort-custom-order field='score' />
+        <field-sort-custom-order field='stickied' />
+        <field-sort-custom-order field='subreddit' />
+        <field-sort-custom-order field='subreddit_id' />
+      </field-sort-info>
+    </datasource>
     <datasource caption='parent_posts_july' inline='true' name='federated.1qhk0rx0jr310b1glfrkh09g25bl' version='10.3'>
       <connection class='federated'>
         <named-connections>
@@ -1512,973 +2475,10 @@
           </metadata-records>
         </connection>
       </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.555556' measure-ordering='alphabetic' measure-percentage='0.444444' show-structure='false' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.537037' measure-ordering='alphabetic' measure-percentage='0.462963' show-structure='false' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
-    </datasource>
-    <datasource caption='mentions_july' inline='true' name='federated.1ggz4jm0hmswl0188w11h0rruyyj' version='10.3'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='mentions_july' name='semistructpassivestore-direct.1y7ncgz1wsbcnx19esv051vfs542'>
-            <connection class='semistructpassivestore-direct' directory='D:/tejun/Downloads/RC_2017-07/data' filename='mentions_july.json' password='' server=''>
-              <semistruct-schemas>
-                <semistruct-schema table='[mentions_july.json]'>
-                  <map key='{root}' value='true' />
-                </semistruct-schema>
-              </semistruct-schemas>
-            </connection>
-          </named-connection>
-        </named-connections>
-        <relation connection='semistructpassivestore-direct.1y7ncgz1wsbcnx19esv051vfs542' name='mentions_july.json' table='[mentions_july.json]' type='table' />
-        <metadata-records>
-          <metadata-record class='column'>
-            <remote-name>Document Index (generated)</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Document Index (generated)]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>Document Index (generated)</remote-alias>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>author</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[author]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>author</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>author_flair_css_class</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[author_flair_css_class]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>author_flair_css_class</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>author_flair_text</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[author_flair_text]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>author_flair_text</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>body</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[body]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>body</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>can_gild</remote-name>
-            <remote-type>11</remote-type>
-            <local-name>[can_gild]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>can_gild</remote-alias>
-            <local-type>boolean</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>can_mod_post</remote-name>
-            <remote-type>11</remote-type>
-            <local-name>[can_mod_post]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>can_mod_post</remote-alias>
-            <local-type>boolean</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>collapsed</remote-name>
-            <remote-type>11</remote-type>
-            <local-name>[collapsed]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>collapsed</remote-alias>
-            <local-type>boolean</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>controversiality</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[controversiality]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>controversiality</remote-alias>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>created_utc</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[created_utc]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>created_utc</remote-alias>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>edited</remote-name>
-            <remote-type>11</remote-type>
-            <local-name>[edited]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>edited</remote-alias>
-            <local-type>boolean</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>gilded</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[gilded]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>gilded</remote-alias>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>id</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[id]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>id</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>is_submitter</remote-name>
-            <remote-type>11</remote-type>
-            <local-name>[is_submitter]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>is_submitter</remote-alias>
-            <local-type>boolean</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>link_id</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[link_id]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>link_id</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>parent_id</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[parent_id]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>parent_id</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>retrieved_on</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[retrieved_on]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>retrieved_on</remote-alias>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>score</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[score]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>score</remote-alias>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>stickied</remote-name>
-            <remote-type>11</remote-type>
-            <local-name>[stickied]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>stickied</remote-alias>
-            <local-type>boolean</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>subreddit</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[subreddit]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>subreddit</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>subreddit_id</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[subreddit_id]</local-name>
-            <parent-name>[mentions_july.json]</parent-name>
-            <remote-alias>subreddit_id</remote-alias>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='UTC Timestamp' datatype='datetime' name='[Calculation_1161647269195231232]' role='dimension' type='ordinal'>
-        <calculation class='tableau' formula='DATEADD(&apos;hour&apos;,0,(Date(&quot;1/1/1970&quot;) + ([created_utc]/86400)))' />
-      </column>
-      <column caption='Length of Body' datatype='integer' name='[Calculation_801922248617934852]' role='measure' type='quantitative'>
-        <calculation class='tableau' formula='LEN([body])' />
-      </column>
-      <column caption='Author is Bot' datatype='boolean' name='[Calculation_801922248621195269]' role='dimension' type='nominal'>
-        <calculation class='tableau' formula='RIGHT(LOWER([author]), 3) = &quot;bot&quot;' />
-      </column>
-      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
-        <desc>
-          <formatted-text>
-            <run>Document Index (generated)</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
-        <calculation class='tableau' formula='1' />
-      </column>
-      <column caption='Author' datatype='string' name='[author]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>author</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Author Flair Css Class' datatype='string' hidden='true' name='[author_flair_css_class]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>author_flair_css_class</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Author Flair Text' datatype='string' hidden='true' name='[author_flair_text]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>author_flair_text</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Body' datatype='string' name='[body]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>body</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Can Gild' datatype='boolean' hidden='true' name='[can_gild]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>can_gild</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Can Mod Post' datatype='boolean' hidden='true' name='[can_mod_post]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>can_mod_post</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Collapsed' datatype='boolean' hidden='true' name='[collapsed]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>collapsed</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Controversiality' datatype='real' name='[controversiality]' role='measure' type='quantitative'>
-        <desc>
-          <formatted-text>
-            <run>controversiality</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Created Utc' datatype='real' name='[created_utc]' role='measure' type='quantitative'>
-        <desc>
-          <formatted-text>
-            <run>created_utc</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Edited' datatype='boolean' hidden='true' name='[edited]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>edited</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Gilded' datatype='real' name='[gilded]' role='measure' type='quantitative'>
-        <desc>
-          <formatted-text>
-            <run>gilded</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>id</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Is Submitter' datatype='boolean' hidden='true' name='[is_submitter]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>is_submitter</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Link Id' datatype='string' name='[link_id]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>link_id</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Parent Id' datatype='string' name='[parent_id]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>parent_id</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Retrieved On' datatype='real' hidden='true' name='[retrieved_on]' role='measure' type='quantitative'>
-        <desc>
-          <formatted-text>
-            <run>retrieved_on</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Score' datatype='real' name='[score]' role='measure' type='quantitative'>
-        <desc>
-          <formatted-text>
-            <run>score</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Stickied' datatype='boolean' name='[stickied]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>stickied</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Subreddit' datatype='string' name='[subreddit]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>subreddit</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <column caption='Subreddit Id' datatype='string' name='[subreddit_id]' role='dimension' type='nominal'>
-        <desc>
-          <formatted-text>
-            <run>subreddit_id</run>
-          </formatted-text>
-        </desc>
-      </column>
-      <folder name='Mentions July' role='dimensions'>
-        <folder-item name='[Document Index (generated)]' type='field' />
-        <folder-item name='[author]' type='field' />
-        <folder-item name='[author_flair_css_class]' type='field' />
-        <folder-item name='[author_flair_text]' type='field' />
-        <folder-item name='[body]' type='field' />
-        <folder-item name='[can_gild]' type='field' />
-        <folder-item name='[can_mod_post]' type='field' />
-        <folder-item name='[collapsed]' type='field' />
-        <folder-item name='[edited]' type='field' />
-        <folder-item name='[id]' type='field' />
-        <folder-item name='[is_submitter]' type='field' />
-        <folder-item name='[link_id]' type='field' />
-        <folder-item name='[parent_id]' type='field' />
-        <folder-item name='[stickied]' type='field' />
-        <folder-item name='[subreddit]' type='field' />
-        <folder-item name='[subreddit_id]' type='field' />
-      </folder>
-      <extract count='-1' enabled='true' units='records'>
-        <connection class='dataengine' dbname='D:/tejun/Downloads/RC_2017-07/tableau/mentions_july.tde' schema='Extract' tablename='Extract' update-time='08/18/2017 05:38:27 AM'>
-          <relation name='Extract' table='[Extract].[Extract]' type='table' />
-          <calculations>
-            <calculation column='[Calculation_1161647269195231232]' formula='DATEADD(&apos;hour&apos;,0,(Date(&quot;1/1/1970&quot;) + ([created_utc]/86400)))' />
-            <calculation column='[Calculation_801922248617934852]' formula='LEN([body])' />
-            <calculation column='[Calculation_801922248621195269]' formula='RIGHT(LOWER([author]), 3) = &quot;bot&quot;' />
-            <calculation column='[Number of Records]' formula='1' />
-          </calculations>
-          <refresh>
-            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='345' timestamp-start='2017-08-18 05:38:27.323' />
-          </refresh>
-          <metadata-records>
-            <metadata-record class='column'>
-              <remote-name>Calculation_1161647269195231232</remote-name>
-              <remote-type>135</remote-type>
-              <local-name>[Calculation_1161647269195231232]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Calculation_1161647269195231232</remote-alias>
-              <ordinal>0</ordinal>
-              <local-type>datetime</local-type>
-              <aggregation>Year</aggregation>
-              <approx-count>345</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Min' datatype='datetime'>#2017-07-30 17:19:29#</statistic>
-                <statistic aggregation='Max' datatype='datetime'>#2017-07-31 23:45:41#</statistic>
-                <statistic aggregation='Count' datatype='integer'>345</statistic>
-                <statistic aggregation='Median' datatype='datetime'>#2017-07-31 09:02:22#</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;datetime&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Calculation_801922248617934852</remote-name>
-              <remote-type>2</remote-type>
-              <local-name>[Calculation_801922248617934852]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Calculation_801922248617934852</remote-alias>
-              <ordinal>1</ordinal>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>34</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Sum' datatype='real'>7014.0</statistic>
-                <statistic aggregation='Avg' datatype='real'>20.330434782608695</statistic>
-                <statistic aggregation='Min' datatype='integer'>12</statistic>
-                <statistic aggregation='Max' datatype='integer'>642</statistic>
-                <statistic aggregation='Stdev' datatype='real'>43.664562105007334</statistic>
-                <statistic aggregation='StdevP' datatype='real'>43.601234207859818</statistic>
-                <statistic aggregation='Var' datatype='real'>1906.5939838220424</statistic>
-                <statistic aggregation='VarP' datatype='real'>1901.0676244486453</statistic>
-                <statistic aggregation='Count' datatype='integer'>345</statistic>
-                <statistic aggregation='SumXSqr' datatype='real'>798466.0</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Document Index (generated)</remote-name>
-              <remote-type>2</remote-type>
-              <local-name>[Document Index (generated)]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Document Index (generated)</remote-alias>
-              <ordinal>2</ordinal>
-              <family>mentions_july.json</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>345</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Sum' datatype='real'>59685.0</statistic>
-                <statistic aggregation='Avg' datatype='real'>173.0</statistic>
-                <statistic aggregation='Min' datatype='integer'>1</statistic>
-                <statistic aggregation='Max' datatype='integer'>345</statistic>
-                <statistic aggregation='Stdev' datatype='real'>99.737154561376968</statistic>
-                <statistic aggregation='StdevP' datatype='real'>99.592503064571417</statistic>
-                <statistic aggregation='Var' datatype='real'>9947.5</statistic>
-                <statistic aggregation='VarP' datatype='real'>9918.6666666666661</statistic>
-                <statistic aggregation='Count' datatype='integer'>345</statistic>
-                <statistic aggregation='Median' datatype='integer'>173</statistic>
-                <statistic aggregation='SumXSqr' datatype='real'>13747445.0</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Number of Records</remote-name>
-              <remote-type>16</remote-type>
-              <local-name>[Number of Records]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Number of Records</remote-alias>
-              <ordinal>3</ordinal>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>1</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Sum' datatype='real'>345.0</statistic>
-                <statistic aggregation='Avg' datatype='real'>1.0</statistic>
-                <statistic aggregation='Min' datatype='integer'>1</statistic>
-                <statistic aggregation='Max' datatype='integer'>1</statistic>
-                <statistic aggregation='Stdev' datatype='real'>0.0</statistic>
-                <statistic aggregation='StdevP' datatype='real'>0.0</statistic>
-                <statistic aggregation='Var' datatype='real'>0.0</statistic>
-                <statistic aggregation='VarP' datatype='real'>0.0</statistic>
-                <statistic aggregation='Count' datatype='integer'>345</statistic>
-                <statistic aggregation='Median' datatype='integer'>1</statistic>
-                <statistic aggregation='SumXSqr' datatype='real'>345.0</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>author</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[author]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>author</remote-alias>
-              <ordinal>4</ordinal>
-              <family>mentions_july.json</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>164</approx-count>
-              <scale>1</scale>
-              <width>1073741823</width>
-              <contains-null>false</contains-null>
-              <collation flag='0' name='binary' />
-              <statistics>
-                <statistic aggregation='Min' datatype='string'>&quot;314GeorgeBoy&quot;</statistic>
-                <statistic aggregation='Max' datatype='string'>&quot;xSpigott&quot;</statistic>
-                <statistic aggregation='Count' datatype='integer'>345</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>body</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[body]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>body</remote-alias>
-              <ordinal>5</ordinal>
-              <family>mentions_july.json</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>42</approx-count>
-              <scale>1</scale>
-              <width>1073741823</width>
-              <contains-null>false</contains-null>
-              <collation flag='0' name='binary' />
-              <statistics>
-                <statistic aggregation='Min' datatype='string'>&quot;....NOT!..... /u/WaterGuy12&quot;</statistic>
-                <statistic aggregation='Max' datatype='string'>&quot;u/WaterGuy12 would&apos;ve loved this meme. RIP&#10;&#10;He&apos;s looking at memes in heaven now. &quot;</statistic>
-                <statistic aggregation='Count' datatype='integer'>345</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>controversiality</remote-name>
-              <remote-type>4</remote-type>
-              <local-name>[controversiality]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>controversiality</remote-alias>
-              <ordinal>6</ordinal>
-              <family>mentions_july.json</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>2</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Sum' datatype='real'>1.0</statistic>
-                <statistic aggregation='Avg' datatype='real'>0.0028985507246376812</statistic>
-                <statistic aggregation='Min' datatype='real'>0.0</statistic>
-                <statistic aggregation='Max' datatype='real'>1.0</statistic>
-                <statistic aggregation='Stdev' datatype='real'>0.053838190205816552</statistic>
-                <statistic aggregation='StdevP' datatype='real'>0.053760107220264947</statistic>
-                <statistic aggregation='Var' datatype='real'>0.0028985507246376812</statistic>
-                <statistic aggregation='VarP' datatype='real'>0.0028901491283343833</statistic>
-                <statistic aggregation='Count' datatype='integer'>345</statistic>
-                <statistic aggregation='SumXSqr' datatype='real'>1.0</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>created_utc</remote-name>
-              <remote-type>5</remote-type>
-              <local-name>[created_utc]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>created_utc</remote-alias>
-              <ordinal>7</ordinal>
-              <family>mentions_july.json</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>345</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Sum' datatype='real'>518014605310.0</statistic>
-                <statistic aggregation='Avg' datatype='real'>1501491609.594203</statistic>
-                <statistic aggregation='Min' datatype='real'>1501435169.0</statistic>
-                <statistic aggregation='Max' datatype='real'>1501544741.0</statistic>
-                <statistic aggregation='Stdev' datatype='real'>30417.827613746555</statistic>
-                <statistic aggregation='StdevP' datatype='real'>30373.711814441347</statistic>
-                <statistic aggregation='Var' datatype='real'>925244236.73960233</statistic>
-                <statistic aggregation='VarP' datatype='real'>922562369.38673389</statistic>
-                <statistic aggregation='Count' datatype='integer'>345</statistic>
-                <statistic aggregation='Median' datatype='real'>1501491742.0</statistic>
-                <statistic aggregation='SumXSqr' datatype='real'>7.7779458383850163e+20</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>gilded</remote-name>
-              <remote-type>4</remote-type>
-              <local-name>[gilded]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>gilded</remote-alias>
-              <ordinal>8</ordinal>
-              <family>mentions_july.json</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>1</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Sum' datatype='real'>0.0</statistic>
-                <statistic aggregation='Avg' datatype='real'>0.0</statistic>
-                <statistic aggregation='Min' datatype='real'>0.0</statistic>
-                <statistic aggregation='Max' datatype='real'>0.0</statistic>
-                <statistic aggregation='Stdev' datatype='real'>0.0</statistic>
-                <statistic aggregation='StdevP' datatype='real'>0.0</statistic>
-                <statistic aggregation='Var' datatype='real'>0.0</statistic>
-                <statistic aggregation='VarP' datatype='real'>0.0</statistic>
-                <statistic aggregation='Count' datatype='integer'>345</statistic>
-                <statistic aggregation='Median' datatype='real'>0.0</statistic>
-                <statistic aggregation='SumXSqr' datatype='real'>0.0</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>id</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[id]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>id</remote-alias>
-              <ordinal>9</ordinal>
-              <family>mentions_july.json</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>345</approx-count>
-              <scale>1</scale>
-              <width>1073741823</width>
-              <contains-null>false</contains-null>
-              <collation flag='0' name='binary' />
-              <statistics>
-                <statistic aggregation='Min' datatype='string'>&quot;dkximel&quot;</statistic>
-                <statistic aggregation='Max' datatype='string'>&quot;dkzmnvg&quot;</statistic>
-                <statistic aggregation='Count' datatype='integer'>345</statistic>
-                <statistic aggregation='Median' datatype='string'>&quot;dkyinxq&quot;</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>link_id</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[link_id]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>link_id</remote-alias>
-              <ordinal>10</ordinal>
-              <family>mentions_july.json</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>255</approx-count>
-              <scale>1</scale>
-              <width>1073741823</width>
-              <contains-null>false</contains-null>
-              <collation flag='0' name='binary' />
-              <statistics>
-                <statistic aggregation='Min' datatype='string'>&quot;t3_5u9i6t&quot;</statistic>
-                <statistic aggregation='Max' datatype='string'>&quot;t3_6qscf5&quot;</statistic>
-                <statistic aggregation='Count' datatype='integer'>345</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>parent_id</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[parent_id]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>parent_id</remote-alias>
-              <ordinal>11</ordinal>
-              <family>mentions_july.json</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>308</approx-count>
-              <scale>1</scale>
-              <width>1073741823</width>
-              <contains-null>false</contains-null>
-              <collation flag='0' name='binary' />
-              <statistics>
-                <statistic aggregation='Min' datatype='string'>&quot;t1_dklycx3&quot;</statistic>
-                <statistic aggregation='Max' datatype='string'>&quot;t3_6qscf5&quot;</statistic>
-                <statistic aggregation='Count' datatype='integer'>345</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>score</remote-name>
-              <remote-type>4</remote-type>
-              <local-name>[score]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>score</remote-alias>
-              <ordinal>12</ordinal>
-              <family>mentions_july.json</family>
-              <local-type>real</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>61</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Sum' datatype='real'>8004.0</statistic>
-                <statistic aggregation='Avg' datatype='real'>23.199999999999999</statistic>
-                <statistic aggregation='Min' datatype='real'>-1.0</statistic>
-                <statistic aggregation='Max' datatype='real'>1434.0</statistic>
-                <statistic aggregation='Stdev' datatype='real'>102.54016796607867</statistic>
-                <statistic aggregation='StdevP' datatype='real'>102.39145118300804</statistic>
-                <statistic aggregation='Var' datatype='real'>10514.486046511627</statistic>
-                <statistic aggregation='VarP' datatype='real'>10484.009275362319</statistic>
-                <statistic aggregation='Count' datatype='integer'>345</statistic>
-                <statistic aggregation='SumXSqr' datatype='real'>3802676.0</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>stickied</remote-name>
-              <remote-type>11</remote-type>
-              <local-name>[stickied]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>stickied</remote-alias>
-              <ordinal>13</ordinal>
-              <family>mentions_july.json</family>
-              <local-type>boolean</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Min' datatype='boolean'>false</statistic>
-                <statistic aggregation='Max' datatype='boolean'>false</statistic>
-                <statistic aggregation='Count' datatype='integer'>345</statistic>
-                <statistic aggregation='Median' datatype='boolean'>false</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>subreddit</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[subreddit]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>subreddit</remote-alias>
-              <ordinal>14</ordinal>
-              <family>mentions_july.json</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>34</approx-count>
-              <scale>1</scale>
-              <width>1073741823</width>
-              <contains-null>false</contains-null>
-              <collation flag='0' name='binary' />
-              <statistics>
-                <statistic aggregation='Min' datatype='string'>&quot;AskReddit&quot;</statistic>
-                <statistic aggregation='Max' datatype='string'>&quot;videos&quot;</statistic>
-                <statistic aggregation='Count' datatype='integer'>345</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>subreddit_id</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[subreddit_id]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>subreddit_id</remote-alias>
-              <ordinal>15</ordinal>
-              <family>mentions_july.json</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>34</approx-count>
-              <scale>1</scale>
-              <width>1073741823</width>
-              <contains-null>false</contains-null>
-              <collation flag='0' name='binary' />
-              <statistics>
-                <statistic aggregation='Min' datatype='string'>&quot;t5_2qh03&quot;</statistic>
-                <statistic aggregation='Max' datatype='string'>&quot;t5_3ke2d&quot;</statistic>
-                <statistic aggregation='Count' datatype='integer'>345</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
-                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
-                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
-                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
-              </attributes>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Calculation_801922248621195269</remote-name>
-              <remote-type>11</remote-type>
-              <local-name>[Calculation_801922248621195269]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Calculation_801922248621195269</remote-alias>
-              <local-type>boolean</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>2</approx-count>
-              <contains-null>false</contains-null>
-              <statistics>
-                <statistic aggregation='Min' datatype='boolean'>false</statistic>
-                <statistic aggregation='Max' datatype='boolean'>true</statistic>
-                <statistic aggregation='Count' datatype='integer'>345</statistic>
-              </statistics>
-              <attributes>
-                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
-                <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
-              </attributes>
-            </metadata-record>
-          </metadata-records>
-        </connection>
-      </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.611111' measure-ordering='alphabetic' measure-percentage='0.388889' show-structure='false' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <field-sort-info field-sort-order-type='custom-order'>
-        <field-sort-custom-order field='Document Index (generated)' />
-        <field-sort-custom-order field='author' />
-        <field-sort-custom-order field='body' />
-        <field-sort-custom-order field='controversiality' />
-        <field-sort-custom-order field='created_utc' />
-        <field-sort-custom-order field='Calculation_1161647269195231232' />
-        <field-sort-custom-order field='edited' />
-        <field-sort-custom-order field='gilded' />
-        <field-sort-custom-order field='id' />
-        <field-sort-custom-order field='is_submitter' />
-        <field-sort-custom-order field='link_id' />
-        <field-sort-custom-order field='parent_id' />
-        <field-sort-custom-order field='retrieved_on' />
-        <field-sort-custom-order field='score' />
-        <field-sort-custom-order field='stickied' />
-        <field-sort-custom-order field='subreddit' />
-        <field-sort-custom-order field='subreddit_id' />
-      </field-sort-info>
     </datasource>
   </datasources>
   <worksheets>
@@ -2534,7 +2534,7 @@
           </style-rule>
         </style>
         <panes>
-          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
@@ -2552,6 +2552,8 @@
                 <run>Æ&#10;</run>
                 <run fontcolor='#787878'>Number of Comments:&#9;</run>
                 <run bold='true'>&lt;[federated.1ggz4jm0hmswl0188w11h0rruyyj].[cnt:Number of Records:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Number of Unique Posts:&#9;</run>
               </formatted-text>
             </customized-tooltip>
             <style>
@@ -2602,6 +2604,7 @@
             <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <datasource-dependencies datasource='federated.1qhk0rx0jr310b1glfrkh09g25bl'>
+            <column-instance column='[name]' derivation='Count' name='[cnt:name:qk]' pivot='key' type='quantitative' />
             <column caption='Link Id' datatype='string' name='[name]' role='dimension' type='nominal'>
               <desc>
                 <formatted-text>
@@ -2621,7 +2624,23 @@
             <mark class='Automatic' />
             <encodings>
               <color column='[federated.1ggz4jm0hmswl0188w11h0rruyyj].[none:Calculation_801922248621195269:nk]' />
+              <lod column='[federated.1qhk0rx0jr310b1glfrkh09g25bl].[cnt:name:qk]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Author is Bot:&#9;</run>
+                <run bold='true'>&lt;[federated.1ggz4jm0hmswl0188w11h0rruyyj].[none:Calculation_801922248621195269:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Subreddit:&#9;</run>
+                <run bold='true'>&lt;[federated.1ggz4jm0hmswl0188w11h0rruyyj].[none:subreddit:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Number of Records:&#9;</run>
+                <run bold='true'>&lt;[federated.1ggz4jm0hmswl0188w11h0rruyyj].[sum:Number of Records:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Number of Unique Posts:&#9;</run>
+                <run bold='true' fontcolor='#000000'>&lt;[federated.1qhk0rx0jr310b1glfrkh09g25bl].[cnt:name:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
           </pane>
         </panes>
         <rows>[federated.1ggz4jm0hmswl0188w11h0rruyyj].[none:subreddit:nk]</rows>
@@ -2820,6 +2839,7 @@
             <column-instance column='[Calculation_1161647269195231232]' derivation='Hour-Trunc' name='[thr:Calculation_1161647269195231232:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <datasource-dependencies datasource='federated.1qhk0rx0jr310b1glfrkh09g25bl'>
+            <column-instance column='[name]' derivation='Count' name='[cnt:name:qk]' pivot='key' type='quantitative' />
             <column caption='Link Id' datatype='string' name='[name]' role='dimension' type='nominal'>
               <desc>
                 <formatted-text>
@@ -2849,6 +2869,7 @@
             <mark class='Square' />
             <encodings>
               <size column='[federated.1ggz4jm0hmswl0188w11h0rruyyj].[cnt:body:qk]' />
+              <lod column='[federated.1qhk0rx0jr310b1glfrkh09g25bl].[cnt:name:qk]' />
             </encodings>
             <customized-tooltip>
               <formatted-text>
@@ -2859,7 +2880,10 @@
                 <run bold='true'>&lt;[federated.1ggz4jm0hmswl0188w11h0rruyyj].[thr:Calculation_1161647269195231232:qk]&gt;</run>
                 <run>Æ&#10;</run>
                 <run fontcolor='#787878'>Number of Comments:&#9;</run>
-                <run bold='true'>&lt;[federated.1ggz4jm0hmswl0188w11h0rruyyj].[cnt:body:qk]&gt;</run>
+                <run bold='true'>&lt;[federated.1ggz4jm0hmswl0188w11h0rruyyj].[cnt:body:qk]&gt; </run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Number of Unique Posts:&#9;</run>
+                <run bold='true' fontcolor='#000000'>&lt;[federated.1qhk0rx0jr310b1glfrkh09g25bl].[cnt:name:qk]&gt;</run>
               </formatted-text>
             </customized-tooltip>
             <style>
@@ -2878,7 +2902,7 @@
     </worksheet>
   </worksheets>
   <windows saved-dpi-scale-factor='1.25' source-height='63'>
-    <window class='worksheet' name='Comments Over Time'>
+    <window class='worksheet' maximized='true' name='Comments Over Time'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2900,7 +2924,7 @@
         </edge>
         <edge name='right'>
           <strip size='160'>
-            <card pane-specification-id='3' param='[federated.1ggz4jm0hmswl0188w11h0rruyyj].[none:Calculation_801922248621195269:nk]' type='color' />
+            <card pane-specification-id='4' param='[federated.1ggz4jm0hmswl0188w11h0rruyyj].[none:Calculation_801922248621195269:nk]' type='color' />
           </strip>
         </edge>
       </cards>
@@ -2917,6 +2941,7 @@
             <field>[federated.1ggz4jm0hmswl0188w11h0rruyyj].[tmn:Calculation_1161647269195231232:ok]</field>
             <field>[federated.1ggz4jm0hmswl0188w11h0rruyyj].[var:score:qk]</field>
             <field>[federated.1ggz4jm0hmswl0188w11h0rruyyj].[yr:Calculation_1161647269195231232:ok]</field>
+            <field>[federated.1qhk0rx0jr310b1glfrkh09g25bl].[none:name:nk]</field>
           </color-one-way>
         </highlight>
       </viewpoint>
@@ -2953,6 +2978,8 @@
             <field>[federated.1ggz4jm0hmswl0188w11h0rruyyj].[none:body:nk]</field>
             <field>[federated.1ggz4jm0hmswl0188w11h0rruyyj].[none:subreddit:nk]</field>
             <field>[federated.1ggz4jm0hmswl0188w11h0rruyyj].[yr:Calculation_1161647269195231232:ok]</field>
+            <field>[federated.1qhk0rx0jr310b1glfrkh09g25bl].[none:name:nk]</field>
+            <field>[federated.1qhk0rx0jr310b1glfrkh09g25bl].[none:title:nk]</field>
           </color-one-way>
         </highlight>
       </viewpoint>
@@ -2988,11 +3015,12 @@
           <color-one-way>
             <field>[federated.1ggz4jm0hmswl0188w11h0rruyyj].[none:Calculation_801922248621195269:nk]</field>
             <field>[federated.1ggz4jm0hmswl0188w11h0rruyyj].[none:subreddit:nk]</field>
+            <field>[federated.1qhk0rx0jr310b1glfrkh09g25bl].[none:name:nk]</field>
           </color-one-way>
         </highlight>
       </viewpoint>
     </window>
-    <window class='worksheet' maximized='true' name='Length of Body by Subreddit'>
+    <window class='worksheet' name='Length of Body by Subreddit'>
       <cards>
         <edge name='left'>
           <strip size='168'>
@@ -3410,238 +3438,243 @@
     </thumbnail>
     <thumbnail height='192' name='Length of Body by Subreddit' width='192'>
       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
-      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
+      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
     </thumbnail>
     <thumbnail height='192' name='Propogation Over Subreddits' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
