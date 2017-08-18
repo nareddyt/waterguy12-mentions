@@ -7,6 +7,1516 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
+    <datasource caption='parent_posts_july' inline='true' name='federated.1qhk0rx0jr310b1glfrkh09g25bl' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='parent_posts_july' name='semistructpassivestore-direct.0v3tezh0o5avjm1ar2mey0x56a3f'>
+            <connection class='semistructpassivestore-direct' directory='D:/tejun/Downloads/RC_2017-07/data' filename='parent_posts_july.json' password='' server=''>
+              <semistruct-schemas>
+                <semistruct-schema table='[parent_posts_july.json]'>
+                  <map key='media' value='false' />
+                  <map key='media.oembed' value='false' />
+                  <map key='media_embed' value='false' />
+                  <map key='preview' value='false' />
+                  <map key='preview.images' value='false' />
+                  <map key='preview.images.Value' value='false' />
+                  <map key='preview.images.Value.resolutions' value='false' />
+                  <map key='preview.images.Value.resolutions.Value' value='false' />
+                  <map key='preview.images.Value.source' value='false' />
+                  <map key='preview.images.Value.variants' value='false' />
+                  <map key='preview.images.Value.variants.gif' value='false' />
+                  <map key='preview.images.Value.variants.gif.resolutions' value='false' />
+                  <map key='preview.images.Value.variants.gif.resolutions.Value' value='false' />
+                  <map key='preview.images.Value.variants.gif.source' value='false' />
+                  <map key='preview.images.Value.variants.mp4' value='false' />
+                  <map key='preview.images.Value.variants.mp4.resolutions' value='false' />
+                  <map key='preview.images.Value.variants.mp4.resolutions.Value' value='false' />
+                  <map key='preview.images.Value.variants.mp4.source' value='false' />
+                  <map key='preview.images.Value.variants.nsfw' value='false' />
+                  <map key='preview.images.Value.variants.nsfw.resolutions' value='false' />
+                  <map key='preview.images.Value.variants.nsfw.resolutions.Value' value='false' />
+                  <map key='preview.images.Value.variants.nsfw.source' value='false' />
+                  <map key='preview.images.Value.variants.obfuscated' value='false' />
+                  <map key='preview.images.Value.variants.obfuscated.resolutions' value='false' />
+                  <map key='preview.images.Value.variants.obfuscated.resolutions.Value' value='false' />
+                  <map key='preview.images.Value.variants.obfuscated.source' value='false' />
+                  <map key='secure_media' value='false' />
+                  <map key='secure_media.oembed' value='false' />
+                  <map key='secure_media_embed' value='false' />
+                  <map key='{root}' value='true' />
+                </semistruct-schema>
+              </semistruct-schemas>
+            </connection>
+          </named-connection>
+        </named-connections>
+        <relation connection='semistructpassivestore-direct.0v3tezh0o5avjm1ar2mey0x56a3f' name='parent_posts_july.json' table='[parent_posts_july.json]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Document Index (generated)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Document Index (generated)]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>Document Index (generated)</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>archived</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[archived]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>archived</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>author</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[author]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>author</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>author_cakeday</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[author_cakeday]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>author_cakeday</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>author_flair_css_class</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[author_flair_css_class]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>author_flair_css_class</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>author_flair_text</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[author_flair_text]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>author_flair_text</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>brand_safe</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[brand_safe]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>brand_safe</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>can_gild</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[can_gild]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>can_gild</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>can_mod_post</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[can_mod_post]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>can_mod_post</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clicked</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[clicked]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>clicked</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contest_mode</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[contest_mode]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>contest_mode</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[created]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>created</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_utc</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[created_utc]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>created_utc</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>domain</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[domain]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>domain</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>downs</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[downs]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>downs</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>edited</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[edited]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>edited</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gilded</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gilded]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>gilded</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hidden</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[hidden]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>hidden</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hide_score</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[hide_score]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>hide_score</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>id</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_self</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_self]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>is_self</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_video</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_video]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>is_video</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>link_flair_css_class</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[link_flair_css_class]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>link_flair_css_class</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>link_flair_text</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[link_flair_text]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>link_flair_text</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>locked</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[locked]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>locked</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_comments</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_comments]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>num_comments</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>over_18</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[over_18]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>over_18</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>parent_whitelist_status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[parent_whitelist_status]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>parent_whitelist_status</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>permalink</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[permalink]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>permalink</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>post_hint</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[post_hint]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>post_hint</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quarantine</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[quarantine]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>quarantine</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>saved</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[saved]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>saved</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>score</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>selftext</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[selftext]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>selftext</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>selftext_html</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[selftext_html]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>selftext_html</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>spoiler</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[spoiler]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>spoiler</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stickied</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[stickied]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>stickied</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subreddit</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[subreddit]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>subreddit</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subreddit_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[subreddit_id]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>subreddit_id</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subreddit_name_prefixed</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[subreddit_name_prefixed]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>subreddit_name_prefixed</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subreddit_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[subreddit_type]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>subreddit_type</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>suggested_sort</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[suggested_sort]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>suggested_sort</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>thumbnail</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[thumbnail]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>thumbnail</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>thumbnail_height</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[thumbnail_height]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>thumbnail_height</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>thumbnail_width</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[thumbnail_width]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>thumbnail_width</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>title</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ups</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ups]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>ups</remote-alias>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>url</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>visited</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[visited]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>visited</remote-alias>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>whitelist_status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[whitelist_status]</local-name>
+            <parent-name>[parent_posts_july.json]</parent-name>
+            <remote-alias>whitelist_status</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' hidden='true' is-auto-gen-lod-field='true' name='[Created Utc per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([created_utc]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' hidden='true' is-auto-gen-lod-field='true' name='[Created per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([created]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column aggregation='Sum' datatype='integer' name='[Document Index (generated)]' role='dimension' type='ordinal'>
+        <desc>
+          <formatted-text>
+            <run>Document Index (generated)</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' hidden='true' is-auto-gen-lod-field='true' name='[Downs per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([downs]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' hidden='true' is-auto-gen-lod-field='true' name='[Gilded per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([gilded]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' hidden='true' is-auto-gen-lod-field='true' name='[Num Comments per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([num_comments]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' hidden='true' is-auto-gen-lod-field='true' name='[Number of Records per parent_posts_july.json]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Document Index (generated)])' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at parent_posts_july.json level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='real' hidden='true' is-auto-gen-lod-field='true' name='[Score per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([score]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' hidden='true' is-auto-gen-lod-field='true' name='[Thumbnail Height per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([thumbnail_height]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' hidden='true' is-auto-gen-lod-field='true' name='[Thumbnail Width per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([thumbnail_width]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column datatype='real' hidden='true' is-auto-gen-lod-field='true' name='[Ups per Document]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [Document Index (generated)] : MAX([ups]) }' />
+        <desc>
+          <formatted-text>
+            <run>A calculated measure that is at Document level of detail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Archived' datatype='boolean' hidden='true' name='[archived]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>archived</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Author' datatype='string' name='[author]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>author</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Author Cakeday' datatype='boolean' hidden='true' name='[author_cakeday]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>author_cakeday</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Author Flair Css Class' datatype='string' hidden='true' name='[author_flair_css_class]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>author_flair_css_class</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Author Flair Text' datatype='string' hidden='true' name='[author_flair_text]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>author_flair_text</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Brand Safe' datatype='boolean' hidden='true' name='[brand_safe]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>brand_safe</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Can Gild' datatype='boolean' hidden='true' name='[can_gild]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>can_gild</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Can Mod Post' datatype='boolean' hidden='true' name='[can_mod_post]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>can_mod_post</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Clicked' datatype='boolean' hidden='true' name='[clicked]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>clicked</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Contest Mode' datatype='boolean' hidden='true' name='[contest_mode]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>contest_mode</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Created' datatype='real' hidden='true' name='[created]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>created</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Created Utc' datatype='real' name='[created_utc]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>created_utc</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Domain' datatype='string' name='[domain]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>domain</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Downs' datatype='real' hidden='true' name='[downs]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>downs</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Edited' datatype='boolean' hidden='true' name='[edited]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>edited</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Gilded' datatype='real' name='[gilded]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>gilded</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Hidden' datatype='boolean' hidden='true' name='[hidden]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>hidden</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Hide Score' datatype='boolean' hidden='true' name='[hide_score]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>hide_score</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Id' datatype='string' hidden='true' name='[id]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>id</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Is Self' datatype='boolean' hidden='true' name='[is_self]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>is_self</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Is Video' datatype='boolean' hidden='true' name='[is_video]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>is_video</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Link Flair Css Class' datatype='string' hidden='true' name='[link_flair_css_class]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>link_flair_css_class</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Link Flair Text' datatype='string' hidden='true' name='[link_flair_text]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>link_flair_text</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Locked' datatype='boolean' hidden='true' name='[locked]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>locked</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>name</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Num Comments' datatype='real' name='[num_comments]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>num_comments</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Over 18' datatype='boolean' hidden='true' name='[over_18]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>over_18</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Parent Whitelist Status' datatype='string' hidden='true' name='[parent_whitelist_status]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>parent_whitelist_status</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Permalink' datatype='string' name='[permalink]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>permalink</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Post Hint' datatype='string' hidden='true' name='[post_hint]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>post_hint</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Quarantine' datatype='boolean' hidden='true' name='[quarantine]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>quarantine</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Saved' datatype='boolean' hidden='true' name='[saved]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>saved</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Score' datatype='real' name='[score]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>score</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Selftext' datatype='string' hidden='true' name='[selftext]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>selftext</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Selftext Html' datatype='string' hidden='true' name='[selftext_html]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>selftext_html</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Spoiler' datatype='boolean' hidden='true' name='[spoiler]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>spoiler</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Stickied' datatype='boolean' hidden='true' name='[stickied]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>stickied</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Subreddit' datatype='string' name='[subreddit]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>subreddit</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Subreddit Id' datatype='string' name='[subreddit_id]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>subreddit_id</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Subreddit Name Prefixed' datatype='string' hidden='true' name='[subreddit_name_prefixed]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>subreddit_name_prefixed</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Subreddit Type' datatype='string' hidden='true' name='[subreddit_type]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>subreddit_type</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Suggested Sort' datatype='string' hidden='true' name='[suggested_sort]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>suggested_sort</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Thumbnail' datatype='string' hidden='true' name='[thumbnail]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>thumbnail</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Thumbnail Height' datatype='real' hidden='true' name='[thumbnail_height]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>thumbnail_height</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Thumbnail Width' datatype='real' hidden='true' name='[thumbnail_width]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>thumbnail_width</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>title</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Ups' datatype='real' hidden='true' name='[ups]' role='measure' type='quantitative'>
+        <desc>
+          <formatted-text>
+            <run>ups</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Url' datatype='string' hidden='true' name='[url]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>url</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Visited' datatype='boolean' hidden='true' name='[visited]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>visited</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <column caption='Whitelist Status' datatype='string' hidden='true' name='[whitelist_status]' role='dimension' type='nominal'>
+        <desc>
+          <formatted-text>
+            <run>whitelist_status</run>
+          </formatted-text>
+        </desc>
+      </column>
+      <folder name='Parent Posts July' role='dimensions'>
+        <folder-item name='[Document Index (generated)]' type='field' />
+        <folder-item name='[archived]' type='field' />
+        <folder-item name='[author]' type='field' />
+        <folder-item name='[author_cakeday]' type='field' />
+        <folder-item name='[author_flair_css_class]' type='field' />
+        <folder-item name='[author_flair_text]' type='field' />
+        <folder-item name='[brand_safe]' type='field' />
+        <folder-item name='[can_gild]' type='field' />
+        <folder-item name='[can_mod_post]' type='field' />
+        <folder-item name='[clicked]' type='field' />
+        <folder-item name='[contest_mode]' type='field' />
+        <folder-item name='[domain]' type='field' />
+        <folder-item name='[edited]' type='field' />
+        <folder-item name='[hidden]' type='field' />
+        <folder-item name='[hide_score]' type='field' />
+        <folder-item name='[id]' type='field' />
+        <folder-item name='[is_self]' type='field' />
+        <folder-item name='[is_video]' type='field' />
+        <folder-item name='[link_flair_css_class]' type='field' />
+        <folder-item name='[link_flair_text]' type='field' />
+        <folder-item name='[locked]' type='field' />
+        <folder-item name='[name]' type='field' />
+        <folder-item name='[over_18]' type='field' />
+        <folder-item name='[parent_whitelist_status]' type='field' />
+        <folder-item name='[permalink]' type='field' />
+        <folder-item name='[post_hint]' type='field' />
+        <folder-item name='[quarantine]' type='field' />
+        <folder-item name='[saved]' type='field' />
+        <folder-item name='[selftext]' type='field' />
+        <folder-item name='[selftext_html]' type='field' />
+        <folder-item name='[spoiler]' type='field' />
+        <folder-item name='[stickied]' type='field' />
+        <folder-item name='[subreddit]' type='field' />
+        <folder-item name='[subreddit_id]' type='field' />
+        <folder-item name='[subreddit_name_prefixed]' type='field' />
+        <folder-item name='[subreddit_type]' type='field' />
+        <folder-item name='[suggested_sort]' type='field' />
+        <folder-item name='[thumbnail]' type='field' />
+        <folder-item name='[title]' type='field' />
+        <folder-item name='[url]' type='field' />
+        <folder-item name='[visited]' type='field' />
+        <folder-item name='[whitelist_status]' type='field' />
+      </folder>
+      <folder name='Source Measures' role='measures'>
+        <folder-item name='[created]' type='field' />
+        <folder-item name='[created_utc]' type='field' />
+        <folder-item name='[downs]' type='field' />
+        <folder-item name='[gilded]' type='field' />
+        <folder-item name='[num_comments]' type='field' />
+        <folder-item name='[score]' type='field' />
+        <folder-item name='[thumbnail_height]' type='field' />
+        <folder-item name='[thumbnail_width]' type='field' />
+        <folder-item name='[ups]' type='field' />
+      </folder>
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='D:/tejun/Downloads/RC_2017-07/tableau/parent_posts_july.tde' schema='Extract' tablename='Extract' update-time='08/18/2017 04:38:39 AM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='255' timestamp-start='2017-08-18 04:38:39.609' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Document Index (generated)</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[Document Index (generated)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Document Index (generated)</remote-alias>
+              <ordinal>0</ordinal>
+              <family>parent_posts_july.json</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>255</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>32640.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>128.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>255</statistic>
+                <statistic aggregation='Stdev' datatype='real'>73.756355658343097</statistic>
+                <statistic aggregation='StdevP' datatype='real'>73.611593289825393</statistic>
+                <statistic aggregation='Var' datatype='real'>5440.0</statistic>
+                <statistic aggregation='VarP' datatype='real'>5418.666666666667</statistic>
+                <statistic aggregation='Count' datatype='integer'>255</statistic>
+                <statistic aggregation='Median' datatype='integer'>128</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>5559680.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>5</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>1</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>255.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.0</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Var' datatype='real'>0.0</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>255</statistic>
+                <statistic aggregation='Median' datatype='integer'>1</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>255.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>author</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[author]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>author</remote-alias>
+              <ordinal>2</ordinal>
+              <family>parent_posts_july.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>212</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;-Caramel-&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;yungcheeseman&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>255</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>created_utc</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[created_utc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>created_utc</remote-alias>
+              <ordinal>3</ordinal>
+              <family>parent_posts_july.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>255</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>382845573448.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1501355189.9921567</statistic>
+                <statistic aggregation='Min' datatype='real'>1487185518.0</statistic>
+                <statistic aggregation='Max' datatype='real'>1501543847.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>1082491.4715486665</statistic>
+                <statistic aggregation='StdevP' datatype='real'>1080366.8542472436</statistic>
+                <statistic aggregation='Var' datatype='real'>1171787785975.5972</statistic>
+                <statistic aggregation='VarP' datatype='real'>1167192539756.085</statistic>
+                <statistic aggregation='Count' datatype='integer'>255</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>5.747874862957759e+20</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>domain</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[domain]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>domain</remote-alias>
+              <ordinal>4</ordinal>
+              <family>parent_posts_july.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;cdn.awwni.me&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;youtu.be&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>255</statistic>
+                <statistic aggregation='Median' datatype='string'>&quot;i.redd.it&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gilded</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[gilded]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gilded</remote-alias>
+              <ordinal>5</ordinal>
+              <family>parent_posts_july.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>13.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>0.050980392156862744</statistic>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>8.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.52623029785985564</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.52519746016574764</statistic>
+                <statistic aggregation='Var' datatype='real'>0.27691832638567238</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.27583237216455209</statistic>
+                <statistic aggregation='Count' datatype='integer'>255</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>71.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>6</ordinal>
+              <family>parent_posts_july.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>255</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;t3_5u9i6t&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;t3_6qscf5&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>255</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>6</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_comments</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[num_comments]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>num_comments</remote-alias>
+              <ordinal>7</ordinal>
+              <family>parent_posts_july.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>79</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>34039.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>133.48627450980393</statistic>
+                <statistic aggregation='Min' datatype='real'>1.0</statistic>
+                <statistic aggregation='Max' datatype='real'>12054.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>833.24808837426872</statistic>
+                <statistic aggregation='StdevP' datatype='real'>831.61266366057134</statistic>
+                <statistic aggregation='Var' datatype='real'>694302.37677937315</statistic>
+                <statistic aggregation='VarP' datatype='real'>691579.62236063054</statistic>
+                <statistic aggregation='Count' datatype='integer'>255</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>180896543.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>permalink</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[permalink]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>permalink</remote-alias>
+              <ordinal>8</ordinal>
+              <family>parent_posts_july.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>255</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;/r/AskReddit/comments/6p0s2d/whats_your_best_nonswearing_insult/&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;/r/videos/comments/6qo6e6/my_geography_teacher_would_show_this_every_monday/&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>255</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>score</remote-name>
+              <remote-type>4</remote-type>
+              <local-name>[score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>score</remote-alias>
+              <ordinal>9</ordinal>
+              <family>parent_posts_july.json</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>183</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>939491.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>3684.2784313725492</statistic>
+                <statistic aggregation='Min' datatype='real'>1.0</statistic>
+                <statistic aggregation='Max' datatype='real'>88182.0</statistic>
+                <statistic aggregation='Stdev' datatype='real'>11170.921163920064</statistic>
+                <statistic aggregation='StdevP' datatype='real'>11148.995880440705</statistic>
+                <statistic aggregation='Var' datatype='real'>124789479.65051721</statistic>
+                <statistic aggregation='VarP' datatype='real'>124300109.14208381</statistic>
+                <statistic aggregation='Count' datatype='integer'>255</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>35157874259.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;float&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subreddit</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[subreddit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>subreddit</remote-alias>
+              <ordinal>10</ordinal>
+              <family>parent_posts_july.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>34</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;AskReddit&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;videos&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>255</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subreddit_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[subreddit_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>subreddit_id</remote-alias>
+              <ordinal>11</ordinal>
+              <family>parent_posts_july.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>34</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;t5_2qh03&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;t5_3ke2d&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>255</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>12</ordinal>
+              <family>parent_posts_july.json</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>79</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='binary' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;\&quot;Out of context\&quot;&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;🅱️idoof&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>255</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;binary&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>3</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.631054' measure-ordering='alphabetic' measure-percentage='0.368946' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
     <datasource caption='mentions_july' inline='true' name='federated.1ggz4jm0hmswl0188w11h0rruyyj' version='10.3'>
       <connection class='federated'>
         <named-connections>
@@ -892,7 +2402,7 @@
           </metadata-records>
         </connection>
       </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.608516' measure-ordering='alphabetic' measure-percentage='0.391484' show-structure='false' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.612536' measure-ordering='alphabetic' measure-percentage='0.387464' show-structure='false' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
@@ -1233,7 +2743,7 @@
       </table>
     </worksheet>
   </worksheets>
-  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
     <window class='worksheet' maximized='true' name='Mentions Over Time'>
       <cards>
         <edge name='left'>
