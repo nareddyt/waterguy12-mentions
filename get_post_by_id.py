@@ -9,17 +9,11 @@ with open(inFile) as data_file:
 
 linksById = {}
 
-count = 0
 for comment in data:
-
-    if count > 2:
-        break
 
     postId = comment['link_id']
 
     if postId not in linksById:
-
-        count += 1
 
         url = 'https://www.reddit.com/by_id/' + postId + '.json'
         headers = {'user-agent': 'teju-reddit-api-accessing' + str(randint(0, 1000))}
@@ -34,6 +28,16 @@ for comment in data:
 outFile = "./data/parent_posts_july.json"
 with open(outFile, 'w') as f:
     f.write('[')
-    myList = ','.join(map(str, linksById.values()))
-    json.dump(myList, f)
+
+    items = []
+    for item in linksById.values():
+        items.append(item)
+
+    for i in range(len(items)):
+        item = items[i]
+        json.dump(item, f)
+
+        if i < len(items) - 1:
+            f.write(',')
+
     f.write(']')
