@@ -2,9 +2,9 @@ import json
 import requests
 from random import randint
 
-filename = "./mentions_july.json"
+inFile = "./data/mentions_july.json"
 
-with open(filename) as data_file:
+with open(inFile) as data_file:
     data = json.load(data_file)
 
 linksById = {}
@@ -26,6 +26,6 @@ for comment in data:
 
 linksJson = json.dumps(linksById, ensure_ascii=True)
 
-outFile = "./parent_posts_july.json"
+outFile = "./data/parent_posts_july.json"
 with open(outFile, 'w') as outfile:
     json.dump(data, outfile)

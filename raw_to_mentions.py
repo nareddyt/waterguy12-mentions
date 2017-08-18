@@ -1,9 +1,9 @@
 import json
 import JSONStreamWriter.JSONStreamWriter as JSONStreamWriter
 
-filename = "RC_2017-07"
-outFile = "./mentions_july.json"
-with open(filename, 'r') as f:
+inFile = "RC_2017-07"
+outFile = "./data/mentions_july.json"
+with open(inFile, 'r') as f:
     with JSONStreamWriter.ArrayWriter(outFile) as jstream:
         lineCount = 0
 
